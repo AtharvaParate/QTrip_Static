@@ -1,236 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QTrip Adventures</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QTrip Adventures</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../../css/styles.css" />
-  </head>
+</head>
 
-  <body>
-    <!-- TODO: MODULE_ADVENTURES_GRID -->
-    <!-- 1. Copy navigation bar HTML from Landing page document -->
-    <nav
-      class="navbar navbar-expand-xs navbar-expand-sm navbar-expand-lg navbar-expand-xl navbar-light bg-light"
-    >
-      <a class="navbar-brand ms-3" href="/index.html">QTrip</a>
+<body style="margin-left: 40px; margin-right: 40px; margin-top: 20px;">
+  <!-- TODO: MODULE_ADVENTURES_GRID -->
+  <!-- 1. Copy navigation bar HTML from Landing page document -->
+  <nav class="navbar navbar-light navbar-expand-sm">
+    <div class="container-fluid">
+      <a href="#"><h2>Qtrip</h2></a>
       <button
-        class="navbar-toggler me-3"
-        type="button"
+        class="navbar-toggler"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-bs-target="#navbarItems"
+        type="button"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="navbar-collapse justify-content-end" id="navbarItems">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/adventures/index.html" class="nav-link">
+              Explore
+            </a>
+          </li>
 
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav ms-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/adventures/index.html">Explore</a>
-          </li>
+          
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container">
-      <div class="content">
-        <!-- TODO: MODULE_ADVENTURES_GRID -->
-        <!-- 1. Create the grid of adventures by adding child elements as required. -->
-
-        <h4>Explore all adventures</h4>
-        <p>Here is a list of adventures that you can explore in city</p>
-
-        <div class="row">
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="/pages/adventures/resort/index.html">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/resort.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Resort</h5>
-                    <p class="mb-0">&#x20B9;1,200</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/tower.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5 class="text-left">Tower</h5>
-                    <p class="mb-0">&#x20B9;1,800</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/market.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Market</h5>
-                    <p class="mb-0">&#x20B9;1,900</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/university.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>University</h5>
-                    <p class="mb-0">&#x20B9;2,100</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/huts.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Huts</h5>
-                    <p class="mb-0">&#x20B9;800</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/mount.jpg"
-                  class="img-responsive img-fluid"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Mount</h5>
-                    <p class="mb-0">&#x20B9;900</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card" id="adventures">
-                <img
-                  src="/assets/adventures/elephant.jpg"
-                  class="img-responsive"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Elephant</h5>
-                    <p class="mb-0">&#x20B9;5,000</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
-            <a href="#">
-              <div class="adventure-card">
-                <img
-                  src="/assets/adventures/canopy.jpg"
-                  class="img-responsive"
-                  alt=""
-                />
-                <div class="adventure-card-text text-md-center w-100">
-                  <div
-                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
-                  >
-                    <h5>Canopy</h5>
-                    <p class="mb-0">&#x20B9;1,000</p>
-                  </div>
-                </div>
-              </div>
-            </a>
+  <div class="container">
+    <div class="content">
+      <!-- TODO: MODULE_ADVENTURES_GRID -->
+      <!-- 1. Create the grid of adventures by adding child elements as required. -->
+      <div class="container2">
+        <h1 style="color: black;" >Explore all the adventures</h1>
+        <h5 style="color:black; " >Here's a list of adventures that you can explore in city</h5>
+      </div>
+      
+      <div class="row row-cols-4">
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/resort.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Resort</b></small>
+              <small class="text"><b>₹1,200</b></small>
           </div>
         </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/tower.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Tower</b></small>
+              <small class="text"><b>₹1,800</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/mount.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Skiing</b></small>
+              <small class="text"><b>₹1,900</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/university.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>University</b></small>
+              <small class="text"><b>₹800</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/market.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Market</b></small>
+              <small class="text"><b>₹1,200</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/church.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Monument</b></small>
+              <small class="text"><b>₹1,200</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/canopy.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Canopy</b></small>
+              <small class="text"><b>₹1,800</b></small>
+          </div>
+        </div>
+
+        <div class="card text-white mb-4 border-0 text-center adventure-card hover"  style="width: 18rem;">
+          <a href="../adventures/resort/index.html"><img class="card-img col-12 col-sm-6 col-md-4 col-lg-3 mask" src="../../assets/adventures/beachside.jpg" width="300px" height="300px"  alt="Card image" style="border-radius: 0.1cm;object-fit: cover;background-color: rgba(251, 251, 251, 0.2)">
+          </a>
+          <div class="d-flex justify-content-between align-items-center card-footer" style="color: black;">
+              <small class="text"><b>Beach Gateway</b></small>
+              <small class="text"><b>₹2,200</b></small>
+          </div>
+        </div>
+
+
       </div>
+
     </div>
+  </div>
 
-    <footer>
-      <div class="container">© QTrip 2022</div>
-    </footer>
+  <footer>
+    <div class="container">Made with ❤️ by Atharva</div>
+  </footer>
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+</body>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
+
