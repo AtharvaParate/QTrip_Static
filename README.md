@@ -1,5 +1,5 @@
 # QTripStatic-FrontEnd
-# QTrip is a travel app designed to help you plan, book, and manage your trips all in one place. Whether you're traveling for business or leisure, QTrip has all the tools you need to make the most of your journey.
+QTrip is a travel app designed to help you plan, book, and manage your trips all in one place. Whether you're traveling for business or leisure, QTrip has all the tools you need to make the most of your journey.
 
 # During the course of this micro-experience, I have created:
 
