@@ -11,17 +11,14 @@ body {
   overflow-y: auto;
   min-height: 100vh;
 }
-
 textarea:focus,
 input:focus {
   outline: none;
 }
-
 a {
   color: inherit !important;
   text-decoration: none !important;
 }
-
 footer {
   background: #f1f1f1;
   width: 100%;
@@ -30,8 +27,8 @@ footer {
   vertical-align: bottom;
   margin-top: 40px;
   text-align: center;
-  /* width: 100%; */
-  /* height: 2.5rem;   */
+  /* width: 100%; 
+  height: 2.5rem;   */
 }
 
 .banner {
@@ -42,10 +39,29 @@ footer {
 }
 
 .content {
-  padding: 20px 0px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  /* padding: 20px 0px; */
+  display: flex;
+  flex-wrap: wrap; 
 }
+
+
+h1,p {
+  color: whitesmoke;
+}
+h1:hover{
+  color: linear-gradient(rgba(236, 228, 228, 0.179), rgba(0, 0, 0, 0.5));
+  text-decoration:underline; 
+
+}
+
+p:hover{
+  color: linear-gradient(rgba(236, 228, 228, 0.179), rgba(0, 0, 0, 0.5));
+  text-decoration: underline;
+}
+
+
+
+
 
 /* ================================== */
 /* Layout page CSS */
@@ -71,15 +87,6 @@ footer {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-.tile img {
-  /* TODO: MODULE_CARDS */
-  /* 1. Fill in the required properties. */
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  overflow: hidden;
-}
 
 .tile a {
   margin: 0px;
@@ -88,58 +95,61 @@ footer {
   height: 100%;
 }
 
-img:hover {
-  -webkit-transition: 0.2s all; /* Safari and Chrome */
-  -moz-transition: 0.2s all; /* Firefox */
-  -ms-transition: 0.2s all; /* IE 9 */
-  -o-transition: 0.2s all; /* Opera */
-  transition: 0.2s all;
-}
-
+ .tile img {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  /* width:50%;
+  height: 50%;
+  border-radius: 10px;
+  transition: 0.2s ease-out; */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+} 
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
   cursor: pointer;
   filter: brightness(50%);
-
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
-
-  -webkit-transform: scale(1.1); /* Safari and Chrome */
-  -moz-transform: scale(1.1); /* Firefox */
-  -ms-transform: scale(1.1); /* IE 9 */
-  -o-transform: scale(1.1); /* Opera */
   transform: scale(1.1);
 }
+
+img:hover{
+  transition: 0.2s all;
+}
+
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
+  margin:  0 auto;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
-  bottom: 20px;
-  display: block;
-  align-items: center;
-  text-align: center;
 }
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+  background-image: linear-gradient(rgba(236, 228, 228, 0.179), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero.jpg");
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
-  height: 50vh;
+  height: 100vh;
   background-position: center;
-  background-size: cover;
+  align-items:center;
+  justify-content:center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
+  width: 100vw;
+  display: flex;
 }
 
 .hero-subheading {
@@ -147,7 +157,7 @@ img:hover {
   font-weight: 100;
 }
 .hero-input {
-  width: 70%;
+  width: 80%;
   height: 50px;
   padding: 16px;
   border-radius: 8px;
@@ -158,112 +168,115 @@ img:hover {
   margin-right: 36px;
 }
 
+.nav-item:hover{
+  color: grey;
+  transition: 0.02s ease-out;
+}
+
+
 /* ================================== */
 /* Adventures grid page CSS */
 /* ================================== */
+.adventure-card:hover{
+  cursor: pointer;
+  filter: brightness(60%);
+  transform: scale(1.1);
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
 
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
   cursor: pointer;
-  flex-direction: column;
-  height: 300px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
+  border: none;
+  overflow: none;
+  
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  width: 100%;
-  height: 100%;
+  
+  
+
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  cursor: pointer;
-  filter: brightness(50%);
+  filter:brightness(40%);
+  transform:scale(1.0);
 }
 
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
 
+.sold{
+  position: sticky;
+  top: 3rem;
+  border: 0.8px solid gray;
+  height: min-content;
+}
+
+
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  width: 400px;
-}
+  border: 0.8px solid gray;
+  border-radius: 4px;
+  padding: 16px;
 
-.adventure-detail-card h5 {
-  text-align: left;
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  display: block;
-  height: auto;
-  width: 100%;
-  opacity: 100%;
-
-  -webkit-transition: 0.2s all; /* Safari and Chrome */
-  -moz-transition: 0.2s all; /* Firefox */
-  -ms-transition: 0.2s all; /* IE 9 */
-  -o-transition: 0.2s all; /* Opera */
-  transition: 0.2s all;
+  width:100%;
+  height:100%;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  cursor: pointer;
-  filter: brightness(40%);
+  filter:brightness(40%);
+  transform:scale(1.1);
 }
-
-.div_border {
-  border: 1px solid #eee;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-.adventure-card-text {
-  position: relative;
-  border: 1px solid #eee;
-  padding: 7px;
-  border-radius: 4px;
-}
-
 .experience-content ul li {
-  margin-left: -10px;
+  margin-left: 16px;
   padding: 0;
 }
-
-li_style li {
-  list-style-position: inside;
+.img-container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+}
+.primary-image{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#ind{
+  color:orange !important;
+}
+#imp{
+  color: grey;
+  font-family: sans-serif;
 }
 
-hr {
-  border-bottom: 1px solid #eee;
-}
-
-hr {
-  border: none;
-}
-
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 768px) {
   /* For desktops phones: */
   #reservation {
     width: 400px;
     position: fixed;
   }
 
-  @media (max-width: 667px) {
-    #adventures {
-      height: 250px;
+  @media only screen and (min-width: 992px){
+    #reservation{
+      width: 300px;
+      position: fixed;
     }
   }
 }
