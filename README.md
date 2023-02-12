@@ -20,6 +20,6 @@ If you wish to contribute to the development of QTrip, please submit an issue or
 
 # Contact
 
-# For any questions or concerns, please contact us at runningflame226@gmail.com
+For any questions or concerns, please contact us at runningflame226@gmail.com
 
 # Direct Website: https://atharva-qtrip.netlify.app/
